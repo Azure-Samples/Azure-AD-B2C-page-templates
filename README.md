@@ -1,3 +1,13 @@
+---
+page_type: sample
+languages:
+- html
+products:
+- azure
+description: "These are sample HTML and CSS files from the templates provided for Azure AD B2C user flows."
+urlFragment: Azure-AD-B2C-page-templates
+---
+
 # Azure AD B2C Page Templates
 
 These are sample HTML and CSS files from the templates provided for Azure AD B2C user flows.  
