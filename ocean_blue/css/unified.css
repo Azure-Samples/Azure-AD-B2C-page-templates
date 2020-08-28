@@ -106,6 +106,23 @@
 .unified_container .row .panel-default #api .localAccount .entry .entry-item label {
   display: none;
 }
+.unified_container .row .panel-default #api .localAccount .entry .entry-item #logonIdentifier, .unified_container .row .panel-default #api .localAccount .entry .entry-item #signInName {
+  outline: none;
+  background-color: #fff !important;
+  background-image: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
+  color: #555;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  line-height: 1.42857143;
+  padding: 6px 20px;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+  width: 100% !important;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important;
+}
 .unified_container .row .panel-default #api .localAccount .entry .entry-item #logonIdentifier, .unified_container .row .panel-default #api .localAccount .entry .entry-item #password {
   outline: none;
   background-color: #fff !important;
