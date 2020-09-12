@@ -50,7 +50,7 @@ ul {
 /** Social Button Styles **/
 #SignInWithLogonNameExchange {
   background-color: #296ec6;
-  background-image: url(none);
+  background-image: none;
   background-size: 10%;
   background-position-x: 95%;
   background-position-y: 50%;
