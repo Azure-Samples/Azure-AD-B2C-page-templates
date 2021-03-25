@@ -1,5 +1,10 @@
 body {
-    background-image: url(../../assets/backgrounds/1-1.png);
+    background-image: url(https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/images/cyclist.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; 
 }
 @font-face {
     font-family: 'SegoeUI';
@@ -11,6 +16,25 @@ body {
     src: url(../../assets/fonts/segoeui_bold.WOFF);
     font-weight: bold;
 }
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/fonts/GothamRounded-Medium.woff2') format('woff2'),
+        url('https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/fonts/GothamRounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GothamSSm';
+    src: url('https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/fonts/GothamSSm-Light.woff2') format('woff2'),
+        url('https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/fonts/GothamSSm-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 #AmazonExchange {
   background-image: url(../../assets/idp_logos/colored/amazon.svg);
 }
@@ -77,8 +101,8 @@ body {
 
 
 #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-    background-image: url(../../assets/idp_logos/colored/local.svg);
+    background-image: url(https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/images/shape.svg);
 }
 #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
-    background-image: url(../../assets/idp_logos/white/local.svg);
+    background-image: url(https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/images/shape.svg);
 }
