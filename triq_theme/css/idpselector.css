@@ -1,7 +1,3 @@
-#cancel {
-  display: none;
-}
-
 #simplemodal-overlay {
   background: #000;
 }
@@ -15,7 +11,7 @@
   overflow: hidden;
 }
 #simplemodal-container h2 {
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: 'GothamSSm',Arial,Helvetica,sans-serif;
   color: #1C5B96;
   font-size: 20px;
   line-height: 26px;
@@ -73,8 +69,6 @@ table {
     box-shadow: none;
     color: white;
 }
-
-
 /** Social Button Styles **/
 #SignInWithLogonNameExchange {
   background-color: white;

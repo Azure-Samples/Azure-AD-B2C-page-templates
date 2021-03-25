@@ -2,16 +2,18 @@ html {
   background: none;
 }
 body {
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'GothamSSm',"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-attachment: fixed;
-  background-color: white;
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
+  color: #ccc;
 }
 p {
     margin: 0px;
+    color: #ccc;
 }
 :focus, a:focus {
     outline: none;
@@ -22,12 +24,18 @@ input, select {
 input[type=password]:focus, input[type=text]:focus, input[type=email]:focus, select:focus {
     border: 1px solid rgba(41, 110, 198, 0.5);
 }
+h2 {
+  color: #ccc;
+}
+
 .container {
   text-align: center;
   width: 100%;
   display: table;
-  height: 100vh;
+  height: 100%;
   padding: 0px;
+  overflow: hidden;
+  position: fixed;
 }
 #api {
   margin: 0 auto;

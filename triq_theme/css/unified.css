@@ -4,7 +4,7 @@
     margin-top: auto;
     margin-bottom: auto;
     height: 100%;
-    background-color: white;
+    background-color: black;
 }
 .unified_container .row .panel-default .panel-body {
   max-width: 380px;
@@ -88,7 +88,7 @@
   -webkit-user-select: none;
   color: #fff;
   width: 63%;
-  box-shadow: 0 0px 30px 0px #dae1f7;
+  /*box-shadow: 0 0px 30px 0px #dae1f7;*/
 }
 .unified_container .row .panel-default #api .localAccount .entry .buttons button:hover {
   -moz-box-shadow: none;
@@ -106,13 +106,13 @@
 .unified_container .row .panel-default #api .localAccount .entry .entry-item label {
   display: none;
 }
-.unified_container .row .panel-default #api .localAccount .entry .entry-item #logonIdentifier, .unified_container .row .panel-default #api .localAccount .entry .entry-item #password {
+.unified_container .row .panel-default #api .localAccount .entry .entry-item #logonIdentifier, .unified_container .row .panel-default #api .localAccount .entry .entry-item #password #UserId {
   outline: none;
   background-color: #fff !important;
   background-image: none !important;
   border-radius: 0.5rem !important;
   box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
-  color: #555;
+  color: #CCCCCC;
   display: inline-block;
   font-size: 1em;
   height: 50px;
@@ -144,7 +144,7 @@
 }
 .unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label #forgotPassword {
   position: absolute;
-  bottom: 90px;
+  bottom: 100px;
   clear: right;
   cursor: pointer;
   float: right;
@@ -260,7 +260,7 @@
   .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #logonIdentifier {
       height: 40px;
  }
-  .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #password {
+  .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #password #UserId{
       height: 40px;
  }
   .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item:nth-child(2) {
