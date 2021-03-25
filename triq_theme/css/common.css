@@ -13,16 +13,33 @@ body {
 }
 p {
     margin: 0px;
-    color: #ccc;
 }
 :focus, a:focus {
     outline: none;
+}
+.panel {
+  border: 0px;
 }
 input, select {
     border: 1px solid white;
 }
 input[type=password]:focus, input[type=text]:focus, input[type=email]:focus, select:focus {
-    border: 1px solid rgba(41, 110, 198, 0.5);
+  display: inline-block;
+  border: 1px solid rgba(41, 110, 198, 0.5);
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 3px;
+  height: 38px;
+  width: 100% !important;
+}
+input[type=password], input[type=text], input[type=email], select {
+  display: inline-block;
+  border: 1px solid rgba(41, 110, 198, 0.5);
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 3px;
+  height: 38px;
+  width: 100% !important;
 }
 h2 {
   color: #ccc;

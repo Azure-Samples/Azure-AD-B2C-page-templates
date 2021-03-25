@@ -7,7 +7,6 @@
     background-color: black;
 }
 .unified_container .row .panel-default .panel-body {
-  max-width: 380px;
   width: auto;
   margin: 0 auto;
   padding: 0px;
@@ -86,8 +85,7 @@
   -ms-touch-action: manipulation;
   -ms-user-select: none;
   -webkit-user-select: none;
-  color: #fff;
-  width: 63%;
+  width: 100%;
   /*box-shadow: 0 0px 30px 0px #dae1f7;*/
 }
 .unified_container .row .panel-default #api .localAccount .entry .buttons button:hover {
@@ -98,7 +96,9 @@
   color: #fff;
 }
 .unified_container .row .panel-default #api .localAccount .entry .entry-item {
-  width: 100%;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
   padding-top: 6px;
   padding-bottom: 6px;
   display: block;
@@ -106,23 +106,38 @@
 .unified_container .row .panel-default #api .localAccount .entry .entry-item label {
   display: none;
 }
-.unified_container .row .panel-default #api .localAccount .entry .entry-item #logonIdentifier, .unified_container .row .panel-default #api .localAccount .entry .entry-item #password #UserId {
+.unified_container .row .panel-default #api .localAccount .entry .entry-item #logonIdentifier, .unified_container .row .panel-default #api .localAccount .entry .entry-item  {
   outline: none;
   background-color: #fff !important;
   background-image: none !important;
   border-radius: 0.5rem !important;
   box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
-  color: #CCCCCC;
+  color: #000000;
   display: inline-block;
   font-size: 1em;
-  height: 50px;
   line-height: 1.42857143;
-  padding: 6px 20px;
+  padding: 6px 6px;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
   width: 100% !important;
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important;
 }
+
+.entry .entry-item {
+  margin-bottom: 10px;
+  padding: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#password #UserId {
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 100% !important;
+
+}
+
 .unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label {
   position: relative;
   text-align: left;
@@ -150,6 +165,18 @@
   float: right;
   text-align: right;
 }
+
+#forgotPassword {
+  position: absolute;
+  top: -100px;
+  clear: right;
+  cursor: pointer;
+  float: left;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
 .unified_container .row .panel-default #api .localAccount .create p {
   text-align: left;
   margin-top: -3rem;
