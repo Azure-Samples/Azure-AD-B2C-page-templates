@@ -22,21 +22,20 @@ p {
 }
 input, select {
     border: 1px solid white;
+    color: black;
 }
 input[type=password]:focus, input[type=text]:focus, input[type=email]:focus, select:focus {
   display: inline-block;
-  border: 1px solid rgba(41, 110, 198, 0.5);
   margin: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-top: 3px;
   height: 38px;
   width: 100% !important;
 }
 input[type=password], input[type=text], input[type=email], select {
   display: inline-block;
-  border: 1px solid rgba(41, 110, 198, 0.5);
   margin: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-top: 3px;
   height: 38px;
   width: 100% !important;
@@ -130,7 +129,7 @@ ul {
 }
 .buttons #continue:disabled {
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   height: 50px;
   background-color: #296ec6;
   opacity: .3;
@@ -141,7 +140,7 @@ ul {
 }
 .buttons #continue {
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   height: 50px;
   background-color: #296ec6;
   opacity: 1;
@@ -149,7 +148,7 @@ ul {
   border: none;
   color: white;
   font-size: 1em;
-  box-shadow: 0 0px 30px 0px #dae1f7;
+  /*box-shadow: 0 0px 30px 0px #dae1f7;*/
 }
 .buttons #continue:hover {
   -moz-box-shadow: none;
@@ -220,13 +219,13 @@ label {
 #attributeList ul li input {
   outline: none;
   height: 50px;
-  width: 70%;
+  width: 100%;
   border-radius: 0.5rem;
-  text-indent: 20px;
+  text-indent: 6px;
   box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
 }
 #attributeList ul li input::-webkit-input-placeholder {
-  text-indent: 20px;
+  text-indent: 6px;
 }
 #attributeList ul li .attrEntry.validate input:invalid, #attributeList ul li .attrEntry.validate input.invalid {
     border: 1px solid #bb0000;
@@ -289,12 +288,19 @@ label {
 }
 #attributeList ul li .attrEntry .itemLevel {
   display: none;
+  color: red;
+  text-align: left;
 }
+
+#attributeList ul li .attrEntry {
+      margin-bottom: 10px;
+}
+
 #attributeList ul li .attrEntry .dropdown_single {
     height: 45px;
     border-radius: 0.5rem;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 0px;
     box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
 }
 #attributeList ul li .attrEntry .dropdown_single option:first-child {
@@ -309,7 +315,7 @@ label {
   display: table-cell;
   height: 50px;
   box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
-  padding-left: 15px;
+  padding-left: 0px;
 }
 #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth select#cpiminternal_dateOfBirth_day.day {
   margin-right: 3%;
@@ -325,9 +331,34 @@ label {
 #attributeList ul li .helpLink {
   display: none;
 }
+
+#attributeList ul li .verificationErrorText {
+  text-align: left;
+  color: red;
+}
+
+#attributeList ul li .verificationSuccessText {
+  text-align: left;
+}
+
+#attributeList ul li #emailVerificationControl_error_message {
+  text-align: left;
+  color: red;
+}
+
+#attributeList ul li #emailVerificationControl_success_message {
+  text-align: left;
+}
+
 #attributeVerification .buttons {
     margin-top: 30px;
 }
+
+#claimVerificationServerError.error.pageLevel {
+  text-align: left;
+  color: red;
+}
+
 @media screen and (max-width: 100%) {
   .row .panel-default .panel-body {
       margin-top: 40px;
@@ -350,17 +381,18 @@ label {
       height: 40px;
       border-radius: 0.5rem;
       border: none;
-      text-indent: 10px;
+      text-indent: 6px;
       box-shadow: 0 0px 40px 2px #dae1f7;
  }
   #attributeVerification #attributeList ul li input::-webkit-input-placeholder {
-      text-indent: 10px;
+      text-indent: 6px;
  }
   #attributeVerification #attributeList ul li #email {
       width: 65%;
       float: left;
       position: relative;
       z-index: 2;
+      margin-bottom: 10px;
  }
   #attributeVerification #attributeList ul li #email_ver_but_verify {
       background: none;
@@ -388,6 +420,11 @@ label {
   #attributeVerification #attributeList ul li .attrEntry #email {
       height: 40px;
  }
+
+  #attributeVerification #attributeList ul li .attrEntry .validate {
+      margin-top: 30px;
+ }
+
   #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_send:after {
       content: " Verify";
       font-size: 1.1em;
@@ -448,6 +485,7 @@ label {
     margin-right: auto;
     white-space: normal;
     box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
+
 }
 .accountButton:hover, .buttons button:hover {
   border: none;
@@ -456,6 +494,36 @@ label {
   background-color: #1662c7;
   color: white !important;
 }
+
+.sendCode, .buttons button {
+  width: 100%;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: : 100px;
+  background-color: #296ec6;
+  opacity: 1;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-size: 1em;
+}
+.verifyCode, .buttons button {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: : 100px;
+  background-color: #296ec6;
+  opacity: 1;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-size: 1em;
+}
+
+#givenName {
+  margin-top: 30px;
+}
+
 /** Phone **/
 @media only screen and (max-width: 600px) {
     .container .row .panel-default {
