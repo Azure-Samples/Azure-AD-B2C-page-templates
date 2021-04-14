@@ -528,6 +528,10 @@ label {
   display: none;
 }
 
+#emailVerificationControl_but_change_claims {
+  display: none;
+}
+
 /** Phone **/
 @media only screen and (max-width: 600px) {
     .container .row .panel-default {
