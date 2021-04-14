@@ -390,7 +390,10 @@ label {
   text-align: left;
   color: red;
 }
-
+#fieldIncorrect.error.pageLevel {
+  text-align: left;
+  color: red;
+}
 
 @media screen and (max-width: 100%) {
   .row .panel-default .panel-body {
@@ -564,6 +567,10 @@ label {
 
 #emailVerificationControl_but_change_claims.changeClaims  {
   display: none !important; /* override inline-style */
+}
+
+#verifying_blurb {
+  display: none;
 }
 
 /** Phone **/
