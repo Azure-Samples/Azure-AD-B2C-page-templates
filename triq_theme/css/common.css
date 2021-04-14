@@ -524,6 +524,10 @@ label {
   margin-top: 30px;
 }
 
+#forgotPassword {
+  display: none;
+}
+
 /** Phone **/
 @media only screen and (max-width: 600px) {
     .container .row .panel-default {
