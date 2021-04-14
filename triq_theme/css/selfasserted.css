@@ -120,7 +120,6 @@
   display: inline-block;
   font-size: 1em;
   line-height: 1.42857143;
-  padding: 6px 6px;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
   width: 100% !important;
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;

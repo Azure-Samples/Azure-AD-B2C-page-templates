@@ -27,18 +27,28 @@ input, select {
 input[type=password]:focus, input[type=text]:focus, input[type=email]:focus, select:focus {
   display: inline-block;
   margin: 0px;
-  padding-left: 0px;
-  padding-top: 3px;
-  height: 38px;
+  outline: none;
+  padding: 0px;
+  text-indent: 6px;
+  height: 50px;
   width: 100% !important;
+  background-color: #fff !important;
+  background-image: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
 }
 input[type=password], input[type=text], input[type=email], select {
   display: inline-block;
   margin: 0px;
-  padding-left: 0px;
-  padding-top: 3px;
-  height: 38px;
+  outline: none;
+  padding: 0px;
+  text-indent: 6px;
+  height: 50px;
   width: 100% !important;
+  background-color: #fff !important;
+  background-image: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
 }
 h2 {
   color: #ccc;
