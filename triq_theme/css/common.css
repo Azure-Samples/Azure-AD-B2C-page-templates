@@ -137,18 +137,20 @@ ul {
 #WeiboExchange:hover {
     background-color: #e81123 !important;
 }
-.buttons #continue:disabled {
+.buttons #continue[aria-disabled=true] {
   margin: 0 auto;
   width: 100%;
   height: 50px;
-  background-color: #296ec6;
-  opacity: .3;
+  background-color: #808080;
+  opacity: .4;
   border-radius: 0.5rem;
   border: none;
   color: white;
   font-size: 1em;
+  box-shadow: none;
+  cursor: none;
 }
-.buttons #continue {
+.buttons #continue[aria-disabled=false]  {
   margin: 0 auto;
   width: 100%;
   height: 50px;
@@ -158,14 +160,26 @@ ul {
   border: none;
   color: white;
   font-size: 1em;
-  /*box-shadow: 0 0px 30px 0px #dae1f7;*/
+  box-shadow: none;
+  cursor: default;
 }
-.buttons #continue:hover {
+.buttons #continue[aria-disabled=true]:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #808080;
+  opacity: .4;
+  border-color: #204d74;
+  cursor: none;
+}
+.buttons #continue[aria-disabled=false]:hover {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #1662c7;
+  opacity: 1;
   border-color: #204d74;
+  cursor: default;
 }
 .buttons #cancel {
   padding: 0;
@@ -569,7 +583,7 @@ label {
   display: none !important; /* override inline-style */
 }
 
-#verifying_blurb {
+#verifying_blurb #verifying_blurb {
   display: none;
 }
 
