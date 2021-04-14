@@ -290,10 +290,15 @@ label {
   display: none;
   color: red;
   text-align: left;
+  margin-bottom: 6px;
 }
-
+#attributeList ul li .attrEntry .verificationControlContent {
+  color: red;
+  text-align: left;
+  margin-bottom: 6px;
+}
 #attributeList ul li .attrEntry {
-      margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #attributeList ul li .attrEntry .dropdown_single {
@@ -339,15 +344,20 @@ label {
 
 #attributeList ul li .verificationSuccessText {
   text-align: left;
+  margin-bottom: 6px;
+  color: white;
 }
 
 #attributeList ul li #emailVerificationControl_error_message {
   text-align: left;
   color: red;
+  margin-bottom: 6px;
 }
 
 #attributeList ul li #emailVerificationControl_success_message {
   text-align: left;
+  margin-bottom: 6px;
+  color: white;
 }
 
 #attributeVerification .buttons {
@@ -358,6 +368,19 @@ label {
   text-align: left;
   color: red;
 }
+#attributeVerification.error.pageLevel {
+  text-align: left;
+  color: red;
+}
+#requiredFieldMissing.error.pageLevel {
+  text-align: left;
+  color: red;
+}
+#passwordEntryMismatch.error.pageLevel {
+  text-align: left;
+  color: red;
+}
+
 
 @media screen and (max-width: 100%) {
   .row .panel-default .panel-body {
@@ -460,6 +483,7 @@ label {
   #attributeVerification #attributeList #verifying_blurb {
       margin-top: 15px;
  }
+
   #attributeVerification .buttons #continue {
       height: 40px;
  }
@@ -528,8 +552,8 @@ label {
   display: none;
 }
 
-#emailVerificationControl_but_change_claims {
-  display: none;
+#emailVerificationControl_but_change_claims.changeClaims  {
+  display: none !important; /* override inline-style */
 }
 
 /** Phone **/
