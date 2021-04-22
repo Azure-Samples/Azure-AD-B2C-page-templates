@@ -123,6 +123,10 @@
   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important;
 }
 
+.error.pageLevel {
+  margin-bottom: 6px;
+}
+
 .entry .entry-item {
   margin-bottom: 10px;
   padding: 0px;
