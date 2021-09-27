@@ -578,6 +578,10 @@ label {
   margin-top: 30px;
 }
 
+#forgotPassword {
+  display: none;
+}
+
 #emailVerificationControl_but_change_claims.changeClaims  {
   display: none !important; /* override inline-style */
 }
