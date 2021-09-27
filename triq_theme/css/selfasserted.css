@@ -43,7 +43,7 @@
   text-align: left;
 }
 .self_asserted_container .row .panel-default #api .intro h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .self_asserted_container .row .panel-default #api .divider {
   display: none;
@@ -53,7 +53,7 @@
   width: 100%;
 }
 .self_asserted_container .row .panel-default #api .localAccount .intro h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .self_asserted_container .row .panel-default #api .localAccount .error {
   color: #bb0000;
