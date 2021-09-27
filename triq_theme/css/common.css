@@ -1,16 +1,10 @@
 html {
-  background-attachment: fixed;
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 body {
   font-family: 'GothamSSm',"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left;
+  background-color: black;
   color: #ccc;
 }
 p {
