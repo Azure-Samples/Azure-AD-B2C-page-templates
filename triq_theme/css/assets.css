@@ -1,17 +1,10 @@
-html {
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  height: calc(100% + (var(--safe-area-inset-top) + var(--safe-area-inset-bottom)));    
-}
 body {
-    background: url(https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/images/cyclist.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  height: calc(100% + (var(--safe-area-inset-top) + var(--safe-area-inset-bottom)));
+    background-image: url(https://triqstoragedevelop.blob.core.windows.net/azureb2csignupandsignin/css/images/cyclist.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; 
 }
 @font-face {
     font-family: 'SegoeUI';

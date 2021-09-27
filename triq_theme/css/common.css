@@ -1,5 +1,12 @@
 html {
-
+  background-attachment: fixed;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body {
   font-family: 'GothamSSm',"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -569,10 +576,6 @@ label {
 
 #givenName {
   margin-top: 30px;
-}
-
-#forgotPassword {
-  display: none;
 }
 
 #emailVerificationControl_but_change_claims.changeClaims  {
